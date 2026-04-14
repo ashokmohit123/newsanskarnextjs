@@ -1,0 +1,206 @@
+.parent {
+ color: #fff;
+    background: #003baf;
+    width: 97%;
+    padding: 40px 30px;
+    position: relative;
+    left: 3%;
+}
+
+/* LEFT TITLE AREA */
+/* .leftSection {
+  width: 45%;
+  float: left;
+} */
+
+.shareWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.sharelikebtn {
+  background: #212529;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.shareDropdown {
+  position: absolute;
+  bottom: 45px;
+  left: 0;
+  background: #fff;
+  padding: 8px;
+  border-radius: 6px;
+  display: flex;
+  gap: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+}
+
+.shareWrapper:hover .shareDropdown {
+  opacity: 1;
+  visibility: visible;
+}
+
+.shareDropdown a {
+  font-size: 18px;
+  color: #555;
+  transition: 0.2s;
+}
+
+.shareDropdown a:hover {
+  color: #0d6efd;
+}
+
+
+
+ .sharelikebtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+   background-color: rgba(0, 0, 0, 0.25) !important;
+   border-color: rgba(0, 0, 0, 0.25) !important;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+}
+.relatednews {
+    background: #1d68d0;
+    padding: 10px;
+   font-weight: 500;
+    font-size: 22px;
+    color:#fff;
+}
+.sub {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.tag {
+  margin-top: 10px;
+  font-size: 21px;
+  opacity: 0.85;
+}
+
+/* RIGHT BANNER IMAGE */
+.rightSection {
+  height: 500px;
+  position: relative;
+}
+
+/* .bannerImg {
+  object-fit: contain;
+} */
+
+/* SECTION TITLE */
+.channelTitle {
+  clear: both;
+  margin-top: 40px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* CHANNEL GRID */
+.channelGrid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 22px;
+  width: 96%;
+  left:4%;
+}
+
+.channelCard {
+  background: #012d80;
+  padding: 20px;
+  border-radius: 15px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.channelImg {
+  object-fit: contain;
+}
+.sectionWrapper {
+  position: relative;
+}
+
+/* Wrap ViewAll + Arrow together */
+.viewAllGroup {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: all 0.55s ease-out;
+  cursor: pointer;
+}
+
+/* Hover animation */
+.sectionWrapper:hover .viewAllGroup {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* View All text */
+.viewAllBtn {
+  color: #40a3ff;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+
+
+.shareWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.sharePopup {
+  position: absolute;
+  bottom: 30px;        /* ⬆ SHOW ABOVE THE ICON */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #222;
+  padding: 8px 10px;
+  border-radius: 6px;
+  display: none;
+  gap: 10px;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+  z-index: 10;
+  white-space: nowrap;
+}
+
+/* Show on hover */
+.shareWrapper:hover .sharePopup {
+  display: flex;
+}
+
+.shareIcon {
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.shareIcon:hover {
+  color: #0dcaf0;
+  transform: scale(1.2);
+}

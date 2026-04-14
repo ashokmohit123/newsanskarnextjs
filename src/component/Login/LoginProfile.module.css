@@ -1,0 +1,414 @@
+.container {
+  min-height: 100vh;
+  /* background: linear-gradient(135deg, #7c0a02, #a11212); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.profileBox {
+  width: 100%;
+  max-width: 380px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 18px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.avatarWrapper {
+  display: flex;
+  /* justify-content: center; */
+  margin-bottom: 10px;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 3px solid #ffb703;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.phone {
+  margin-bottom: 15px;
+  color:#fff;
+  font-size: 20px;
+}
+
+.subscriptionBox {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.noPremium {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.premiumCard {
+  /* background: linear-gradient(90deg, #ff9900, #ff6600); */
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.premiumText {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.price {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.premiumBtn {
+  width: 100%;
+  background: #0079ff;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  color: white;
+ font-weight: 600;
+    max-width: 228px;
+    font-size: 20px;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.logout,
+.delete {
+  width: 48%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.logout {
+  background: #b30000;
+}
+
+.delete {
+  background: #7d0000;
+}
+
+.option {
+  margin-top: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.editContainer {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: #0b1020; */
+}
+
+.editCard {
+  width: 380px;
+ background: #ffffff0d;
+  border-radius: 16px;
+  padding: 24px;
+  color: #fff;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.avatarSection {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #125ad1;
+}
+
+.cameraIcon {
+ position: relative;
+    bottom: -3px;
+    right: 30px;
+  background: #2c3a8c;
+  color: #fff;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.formGroup {
+  margin-bottom: 14px;
+}
+
+.formGroup label {
+  font-size: 13px;
+  color: #9aa4d1;
+}
+
+.formGroup input {
+  width: 100%;
+  height: 44px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: none;
+  padding: 0 12px;
+ background: #ffffff1a;
+  color: #fff;
+}
+
+.formGroup input:read-only {
+  opacity: 0.7;
+}
+
+.saveBtn {
+  width: 100%;
+  height: 46px;
+  border-radius: 10px;
+  background: #102ac4;
+  color: #fff;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.historyBox {
+  margin-top: 10px;
+  padding: 10px;
+ background: #ffffff1a;
+  border-radius: 8px;
+  max-height: 100px;
+    overflow-y: auto;
+    padding-right: 6px;
+    padding-top: 5px;
+}
+.historyBox::-webkit-scrollbar {
+    width: 4px;
+}
+.historyBox::-webkit-scrollbar-thumb {
+    background: #0f3cb8;
+    border-radius: 8px;
+}
+.historyBox::-webkit-scrollbar-track {
+    background: #222;
+}
+.historyItem {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.historyItem:last-child {
+  border-bottom: none;
+}
+
+.subCard::-webkit-scrollbar {
+    width: 4px;
+}
+.subCard::-webkit-scrollbar-thumb {
+    background: #0f3cb8;
+    border-radius: 8px;
+}
+.subCard::-webkit-scrollbar-track {
+    background: #222;
+}
+/* MAIN */
+.pageWrapper {
+min-height: 100vh;
+}
+.addressLine {
+  display: flex;
+  gap: 6px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  flex-wrap: wrap; /* optional */
+}
+
+.addressLine li {
+  display: flex;
+  align-items: center;
+}
+ul.addressLine svg {
+    display: inline-block;
+}
+/* PANELS */
+.leftPanel {
+padding: 30px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.rightPanel {
+padding: 40px;
+overflow-y: auto;
+}
+
+/* PROFILE */
+.profileImg {
+width: 110px;
+height: 110px;
+border-radius: 100px;
+background-size: cover;
+background-position: center;
+border: 3px solid rgba(255,255,255,0.6);
+margin-bottom: 10px;
+}
+
+/* TEXT */
+.mobileNumber {
+font-size: 22px;
+margin-bottom: 20px;
+}
+
+.settingsTitle {
+font-size: 28px;
+font-weight: 800;
+letter-spacing: 0.5px;
+margin-bottom: 20px;
+}
+
+/* BUTTONS */
+.settingsBtn {
+width: 100%;
+min-height: 90px;
+margin-bottom: 16px;
+background: rgb(8 8 117 / 53%);
+border: 1px solid #08086e;
+border-radius: 12px;
+font-size: 25px;
+color: #fff;
+cursor: pointer;
+font-weight: 600;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+transition: all 0.25s ease;
+}
+
+.settingsBtn:hover {
+  border-color: #ffffff;
+}
+
+.active {
+  border-color: #ffffff;
+}
+
+
+/* SECTION RESET */
+.sectionBox {
+background: none;
+border: none;
+padding: 0;
+}
+
+/* SUB BOX */
+.subCard {
+background: linear-gradient(
+  90deg,
+  rgba(2, 18, 110, 0.95),
+  rgba(8, 36, 170, 0.85)
+);
+
+color: #fff;
+padding: 25px;
+border-radius: 12px;
+margin-bottom: 20px;
+width: 100%;
+}
+
+/* ACTION */
+.greenBtn {
+margin-top: 20px;
+display: inline-block;
+padding: 14px 30px;
+background: #22c55e;
+color: #fff;
+font-weight: 600;
+border-radius: 8px;
+text-decoration: none;
+}
+
+/* RESPONSIVE FIXES */
+@media (max-width: 991px) {
+.settingsBtn {
+min-height: 75px;
+font-size: 20px;
+}
+}
+
+@media (max-width: 767px) {
+.leftPanel,
+.rightPanel {
+padding: 20px;
+}
+
+.settingsTitle {
+font-size: 24px;
+}
+
+.mobileNumber {
+font-size: 20px;
+}
+}
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modalCard {
+ background: linear-gradient(90deg, #02126ef2, #0824aad9);
+  width: 420px;
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #fff;
+  cursor: pointer;
+}

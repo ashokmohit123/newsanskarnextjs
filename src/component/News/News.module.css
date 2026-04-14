@@ -1,0 +1,18 @@
+.parent {
+ color: #fff;
+    width: 96%;
+    /* padding-bottom: 5px !important; */
+    padding: 0px 30px;
+    position: relative;
+    left: 4%;
+}
+.relatednews {
+    background: #1d68d0;
+    padding: 10px;
+   font-weight: 500;
+    font-size: 22px;
+}
+.description h3{
+    font-size: 20px;
+    line-height: 40px;
+}

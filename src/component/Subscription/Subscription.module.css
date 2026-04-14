@@ -1,0 +1,147 @@
+.background {
+  /* position: fixed; */
+  inset: 0;
+  background: url("../../.././public/assets/images/banner_image.jpg") center/cover;
+  filter: blur(8px) brightness(0.25);
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  padding: 50px;
+  color: white;
+}
+
+.left {
+  width: 28%;
+}
+
+.logo {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.right {
+  width: 72%;
+  padding-left: 60px;
+}
+
+.verticalPlans {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.features {
+  list-style: none;
+  margin-top: 90px;
+  padding-left: 0px;
+}
+
+.features li {
+  margin-bottom: 22px;
+  font-size: 18px;
+}
+
+.planCard {
+  width: 160px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.planCard:hover {
+  transform: scale(1.05);
+}
+
+.planCard.active {
+  border: 2px solid #1f80ff;
+  box-shadow: 0 0 25px rgba(31, 128, 255, 0.6);
+}
+
+.planHeading {
+  padding: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.cardBody ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cardBody li {
+  margin-bottom: 10px;
+}
+
+.priceRow {
+  display: flex;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.priceCard {
+  width: 270px;
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.priceCard:hover {
+  transform: scale(1.05);
+}
+
+.priceCard.active {
+  border: 2px solid #1f80ff;
+  box-shadow: 0 0 20px rgba(31, 128, 255, 0.6);
+}
+
+
+/* White background overlay */
+.background {
+  position: fixed;
+  inset: 0;
+  /* background: #fff; */
+  opacity: 0.6;
+  z-index: -1;
+}
+
+/* Check icon styling */
+.checkIcon {
+  color: #ffffff; /* WHITE CHECK */
+ font-size: 22px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+/* List styling */
+.valueList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.valueList li {
+  padding: 6px 0;
+  text-align: center;
+}
+
+/* Optional improvement */
+.cardBody {
+  display: flex;
+  justify-content: center;
+}
+
+/* Active plan highlight */
+.active {
+  border: 2px solid #ffffff;
+  transform: scale(1.02);
+}

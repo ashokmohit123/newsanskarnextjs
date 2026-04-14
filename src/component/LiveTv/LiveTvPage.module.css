@@ -1,0 +1,73 @@
+/* LiveTvPage.module.css */
+
+/* This will hide the slide */
+
+.homeSlide{
+  box-shadow: none !important;
+}
+.hidetextBlock {
+  display: none !important;
+}
+.heightvideoPlayer{
+  height: 40% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    max-height: 1000px;
+}
+.backgroundhomeSlide {
+    box-shadow: none !important;
+}
+.flixParentsSection{
+    width: 96% !important;
+    left:4% !important;
+    top:-200px !important;
+}
+.channelcardlive{
+  width: 292px !important;
+  height:145px !important;
+}
+.channelthumb{
+  width:50px !important;
+  height:60px !important;
+}
+/* .flixParentsSection img{
+  width: 50px !important;
+  height:50px !important;
+} */
+.floatvideoWrapper{
+     float: inherit !important; 
+}
+.volumeshowLive{
+  /* bottom: 345px !important; */
+}
+
+ .channel_card{
+  height:166px !important;
+}
+
+.liveTvWrapper {
+  position: relative;
+}
+
+/* Channel container */
+.channelHoverWrapper {
+  transition: all 0.4s ease;
+  height: 50px;
+  /* overflow: hidden; */
+}
+
+/* Hidden state */
+.hide {
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+}
+
+/* Visible state */
+.show {
+  max-height: 2000px; /* enough height for all channels */
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}

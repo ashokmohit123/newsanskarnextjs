@@ -1,0 +1,80 @@
+.guruWrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.guruWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+/* Hover Smooth Zoom + Shadow */
+.guruWrapper:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+.guruWrapper:hover img {
+  transform: scale(1.07);
+  filter: brightness(1.15);
+}
+.episodeTitleInfo{
+  position: absolute;
+  z-index: 9999;
+}
+.channel_thumb {
+  width: 100%;
+  /* height: 230px;            */
+  object-fit: contain;      /* preserve logo aspect */
+  display: block;
+  /* border-radius: 8px; */
+  background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.01));
+}
+/* If logos with transparent background appear faint, add subtle inner highlight */
+.channel_thumb::after {
+  content: "";
+  display: block;
+  pointer-events: none;
+}
+
+.progressContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: #222;
+  border-radius: 0 0 6px 6px;
+  overflow: hidden;
+}
+
+.progressBar {
+  height: 100%;
+  background: #ff3e1d;
+  transition: width 0.3s ease;
+}
+.watchFirstEpisode{
+  background: #0960c0;
+    border: #0960c0;
+    font-size: 21px;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 600;
+    max-width: 307px;
+}
+.premiumLogo img {
+    position: absolute;
+    z-index: 999;
+    left: 19px;
+    top: -4px;
+}
+.premiumLogoContinue img{
+  z-index: 999;
+    position: relative;
+    top: 46px;
+    left: 1px;
+}

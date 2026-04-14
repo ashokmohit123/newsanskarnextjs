@@ -1,0 +1,63 @@
+.bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #7b0000, #b80000);
+}
+
+.avatar {
+  text-align: center;
+  color: #fff;
+  min-width: 80px;
+}
+
+.avatar img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid orange;
+  object-fit: cover;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card img {
+  height: 170px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cardBody {
+  padding: 12px;
+  color: #fff;
+}
+
+.cardBody h6 {
+  font-weight: 600;
+  color: #ffcc70;
+}
+
+.cardBody p {
+  font-size: 14px;
+  color: #ddd;
+  margin-bottom: 0;
+}
+
+.arrow {
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+  font-size: 28px;
+  color: orange;
+}
+.parent {
+ color: #fff;
+    width: 96%;
+    /* padding-bottom: 5px !important; */
+    padding: 0px 30px;
+    position: relative;
+    left: 4%;
+}

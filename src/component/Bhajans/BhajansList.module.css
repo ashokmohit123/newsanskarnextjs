@@ -1,0 +1,383 @@
+.parent {
+ color: #fff;
+    background: #003baf;
+    width: 97%;
+    /* padding-bottom: 5px !important; */
+    padding: 10px 30px;
+    position: relative;
+    left: 3%;
+}
+
+/* LEFT TITLE AREA */
+/* .leftSection {
+  width: 45%;
+  float: left;
+} */
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.sub {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.tag {
+  margin-top: 10px;
+  font-size: 16px;
+  opacity: 0.85;
+}
+
+/* RIGHT BANNER IMAGE */
+.rightSection {
+  height: 350px;
+  position: relative;
+}
+
+.bannerImg {
+  object-fit: contain;
+}
+
+/* SECTION TITLE */
+.channelTitle {
+  clear: both;
+  margin-top: 40px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* CHANNEL GRID */
+.channelGrid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 22px;
+  width: 96%;
+  left:4%;
+}
+
+.channelCard {
+  background: #012d80;
+  padding: 20px;
+  border-radius: 15px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.channelImg {
+  object-fit: contain;
+}
+.sectionWrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.section_title {
+  position: relative;
+  z-index: 10;
+}
+
+.swiper {
+  margin-top: 10px;
+}
+
+
+/* Wrap ViewAll + Arrow together */
+.viewAllGroup {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: all 0.55s ease-out;
+  cursor: pointer;
+}
+
+/* Hover animation */
+.sectionWrapper:hover .viewAllGroup {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* View All text */
+.viewAllBtn {
+  color: #40a3ff;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+
+
+.shareWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.sharePopup {
+  position: absolute;
+  bottom: 30px;        /* ⬆ SHOW ABOVE THE ICON */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #222;
+  padding: 8px 10px;
+  border-radius: 6px;
+  display: none;
+  gap: 10px;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+  z-index: 10;
+  white-space: nowrap;
+}
+
+/* Show on hover */
+.shareWrapper:hover .sharePopup {
+  display: flex;
+}
+
+.shareIcon {
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.shareIcon:hover {
+  color: #0dcaf0;
+  transform: scale(1.2);
+}
+
+/* music player css */
+
+/* SECTION */
+.section {
+  padding: 15px;
+  background: linear-gradient(180deg, #7b0000, #b10000);
+}
+
+.rowHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge {
+  background: orange;
+  padding: 6px 12px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.arrows svg {
+  color: white;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+/* SLIDER */
+.slider {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+  overflow-x: auto;
+}
+
+.card {
+  min-width: 220px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card p {
+  color: white;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+/* PLAYER */
+.player {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #0b0b0b;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  z-index: 999;
+}
+
+.trackInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.trackInfo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+}
+
+.trackTitle {
+  font-weight: bold;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.playBtn {
+  background: red;
+  padding: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.rightControls {
+  display: flex;
+  gap: 15px;
+}
+
+.thumbWrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.thumbWrapper img {
+  width: 97%;
+  border-radius: 20px;
+}
+
+.playOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.playOverlay svg {
+  color: #fff;
+  font-size: 42px;
+}
+
+.thumbWrapper:hover .playOverlay {
+  opacity: 1;
+}
+
+.wrapper {
+  position: fixed;
+  bottom: 82px;
+  left: 0;
+  width: 100%;
+  background: #0b0f1a;
+  z-index: 9999;
+}
+
+/* 🔴 TOP PROGRESS */
+.progressBar {
+  height: 5px;
+  background: #8e8a8a;
+  position: relative;
+    z-index: 999999;
+    cursor: pointer;
+}
+
+.progressBar div {
+  height: 100%;
+  background: red;
+  transition: width 0.2s linear;
+}
+
+/* PLAYER */
+.player {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+/* LEFT */
+.left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.left img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.meta h4 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.meta p {
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* CENTER */
+.center {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.playBtn {
+  background: red;
+  border: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* RIGHT */
+.right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.right svg,
+.center svg {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.right svg:hover,
+.center svg:hover {
+  opacity: 1;
+}
+.volumeSlider {
+  width: 60px;
+  cursor: pointer;
+  height:4px;
+}
